@@ -1,0 +1,37 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.background {
+  overflow: auto;
+  background-color: #E0E0E0;
+}
+
+.img{
+  overflow: hidden;
+}
+
+.parent-container {
+  min-height: 100%;  
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+}
+
+.card {
+    padding-top: 53px;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-bottom: 26px;
+    height: 275px;
+    width: 445px;
+  }
+
+.links {
+    margin-top: 15px;
+  }
+  
+.error {
+    margin-top: -30px;
+  }

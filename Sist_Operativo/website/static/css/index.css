@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+i {
+    margin-top: 15px;
+    font-size: 150px;
+}  
+
+button {
+    align-items: flex-end;
+
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.parent-container {
+    min-height: 100%;  
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+} 
+

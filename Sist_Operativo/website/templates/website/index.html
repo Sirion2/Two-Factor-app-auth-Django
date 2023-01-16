@@ -1,0 +1,32 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %} 
+{% block additionalStyles %}
+     <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+{% endblock %}
+
+{% block home %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">Sist Operativo</a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a href="{% url 'logout' %}">
+
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesion</button>
+        </a>
+        </li>
+</nav>
+    <div class="background">
+        <div class="parent-container d-flex justify-content-center"> 
+            <div class="row ">
+                <div class="col-xs-6 .col-md-4">
+                    <div class="container align-self-center">
+                        <h1>Bienvenido, {{ username }}</h1>
+                        <p class="text-center fw-lighter">Te haz verificado exitosamente.</p>
+                        <i class="bi bi-shield-lock d-flex justify-content-center" id="queso"></i>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
